@@ -146,7 +146,6 @@ class JamEmpty extends Empty<JamVal> implements JamList {
   public JamEmpty empty() { return ONLY; }
   public JamCons cons(JamVal v) { return new JamCons(v, this); }
   public <ResType> ResType accept(JamValVisitor<ResType> v) { return v.forJamList(this); }
-  public <ResType> ResType accept(ASTVisitor<ResType> v) { return v.forJamEmpty(this); }
 }
 
 class JamCons extends Cons<JamVal> implements JamList {

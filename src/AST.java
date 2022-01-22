@@ -10,8 +10,7 @@ interface AST {
 interface ASTVisitor<ResType> {
   ResType forBoolConstant(BoolConstant b);
   ResType forIntConstant(IntConstant i);
-  ResType forEmptyConstant(EmptyConstant n);
-  ResType forJamEmpty(JamEmpty je);
+  ResType forEmptyConstant(EmptyConstant e);
   ResType forVariable(Variable v);
   ResType forPrimFun(PrimFun f);
   ResType forUnOpApp(UnOpApp u);
