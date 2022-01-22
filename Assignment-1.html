@@ -1,0 +1,2076 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Assignment-1_files/filelist.xml">
+<title>COMP 411 Principles of Programming Languages</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Robert Cartwright</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Robert Cartwright</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>170</o:TotalTime>
+  <o:Created>2022-01-15T04:40:00Z</o:Created>
+  <o:LastSaved>2022-01-15T04:53:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3016</o:Words>
+  <o:Characters>15777</o:Characters>
+  <o:Lines>131</o:Lines>
+  <o:Paragraphs>37</o:Paragraphs>
+  <o:CharactersWithSpaces>18756</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Assignment-1_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Assignment-1_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#0000EE;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#551A8B;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+tt
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.class1, li.class1, div.class1
+	{mso-style-name:class1;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Consolas;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:970205115;
+	mso-list-template-ids:-1300824304;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1245993005;
+	mso-list-template-ids:-87369364;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1603033316;
+	mso-list-template-ids:-262756864;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1736465113;
+	mso-list-template-ids:90608620;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link="#0000EE" vlink="#551A8B" style='tab-interval:
+5.0in' alink="#ff0000">
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=class1><b><span style='font-size:36.0pt;color:#3366FF'>Programming
+  Assignment 1:<br>
+  Parsing and Abstract Syntax</span></b> </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<h2><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Points:
+100<o:p></o:p></span></h2>
+
+<h2><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Overview<o:p></o:p></span></h2>
+
+<p><b>Preparation</b> &nbsp; </p>
+
+<p>We recommend using either IntelliJ or <span class=SpellE>DrJava</span> as
+your Java IDE for all programming assignments. <span
+style='mso-spacerun:yes'> </span>You can download <span class=SpellE>DrJava</span>
+in the form of the executable jar file <span style='font-family:Consolas'>drjava.jar</span>
+from <a href="http://www.cs.rice.edu/~javaplt/drjavarice">http://www.cs.rice.edu/~javaplt/drjavarice</a>.
+<span style='mso-spacerun:yes'> </span>When you accept the assignment, GitHub
+Classroom creates a repository for you that in initialized to contain all of
+the support files for the project including this project description.<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>DrJava</span> only runs
+using Java 8.<span style='mso-spacerun:yes'>  </span>We recommend using the
+Oracle Java 8 <span class=SpellE>OpenJDK</span> with <span class=SpellE>DrJava</span>.<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>OpenJDK</span> 8 works
+well on some machines but does not appear to be as solid an implementation on
+Windows<span style='mso-spacerun:yes'>   </span>as the Oracle Java 8 <span
+class=SpellE>OpenJDK</span>. If you use IntelliJ as your IDE, you can choose any
+compatible JDK, but note that your programs will be tested using Java 8.<span
+style='mso-spacerun:yes'>  </span>Beware of the fact that the assignments you
+submit must run from the command line and <i>cannot</i> use named packages
+because our test programs do not prefix any class names with package names.<span
+style='mso-spacerun:yes'>  </span>Edit the <span style='font-family:Consolas'>README</span>
+file for your repository to give an overview of your solution, most notably the
+API that it supports. <span style='mso-spacerun:yes'> </span>We recommend that
+you place your Java source files in the folder named <span class=SpellE><span
+style='font-family:Consolas'>src</span></span> that is already present in your
+repository. <span style='mso-spacerun:yes'> </span>We also recommend placing
+your compiled class files in a separate folder named <span style='font-family:
+Consolas'>classes</span> that is already present in your repository.<span
+style='mso-spacerun:yes'>  </span>In <span class=SpellE>DrJava</span>, you can
+define a project with <span class=SpellE><span style='font-family:Consolas'>src</span></span>
+as the source directory and <span style='font-family:Consolas'>classes</span>
+as the folder where the compiler places the <span style='font-family:Consolas'>.class</span>
+files corresponding to the source program. <span
+style='mso-spacerun:yes'> </span>Like more elaborate professional IDEs, <span
+class=SpellE>DrJava</span> supports compiling and testing projects.</p>
+
+<p><span class=SpellE>DrJava</span> is distributed as a Java <code><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>jar</span></code>
+file at the web site <a href="http://drjava.org">http://drjava.org</a> as well
+our local site (<a href="http://www.cs.rice.edu/~javaplt/drjavarice">http://www.cs.rice.edu/~javaplt/drjavarice</a>)
+but the local site typically has more recent builds. You can run <span
+class=SpellE>DrJava</span> on a Linux or Mac system (with Java JDK 8 installed)
+by typing </p>
+
+<p><span class=GramE><code><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt;font-family:Consolas'>java</span></code></span><code><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>
+-jar drjava.jar </span></code><span style='font-family:Consolas'><o:p></o:p></span></p>
+
+<p><span class=GramE>assuming</span> that <tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>drjava.jar</span></tt> is
+located in the current directory. <span style='mso-spacerun:yes'> </span><span
+class=SpellE>DrJava</span> is not a registered Mac application, so some recent
+versions of Mac OS X make running <span class=SpellE>DrJava</span>
+difficult.<span style='mso-spacerun:yes'>  </span>On Windows machines (with a
+properly installed Java JDK 8), you can run the <tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>drjava.jar</span></tt>
+file simply by double-clicking on the icon. If the Registry has the wrong file
+type associated the <tt><span style='font-size:10.0pt;font-family:Consolas'>.jar</span></tt>
+files, then double-clicking <tt><span style='font-size:10.0pt;font-family:Consolas'>.jar</span></tt>
+icons will not work. In this case, we recommend running <span class=SpellE>DrJava</span>
+inside the Windows “Command Prompt” or <span class=SpellE>Powershell</span>
+using the same command as shown above for Linux. </p>
+
+<p>Documentation for <span class=SpellE>DrJava</span> is available at <a
+href="http://drjava.org">drjava.org</a>. If you have further questions about <span
+class=SpellE>DrJava</span>, ask them on Piazza. </p>
+
+<p><b>Testing</b> &nbsp; You are expected to write unit tests for all of your
+non-trivial methods or functions <em><span style='font-family:"Arial",sans-serif'>and
+submit your test code as part of your program</span></em>. <span class=SpellE>DrJava</span>
+provides integrated support for JUnit which makes this task easy. <span
+style='mso-spacerun:yes'> </span>IntelliJ supports integrated testing using Junit
+as well.</p>
+
+<p><b>Task</b> &nbsp; Your task is to write a parser in Generic Java (Java 8+)
+that recognizes expressions in the pedagogic functional language Jam, which
+will be defined subsequently. The course staff has provided a <span
+class=SpellE>lexer</span> in Java for this assignment. This <span class=SpellE>lexer</span>
+returns a larger set of symbols than what appears in the <a href="#jam">Jam
+definition</a>. These extra symbols anticipate future extensions to Jam in
+later projects. At this point, your parser should simply reject any program
+containing one of these extra symbols as ill-formed, just like it would for any
+other syntax error.</p>
+
+<p><b>Java Support Library</b> &nbsp; In the provided support files, the
+parser's input token stream is generated by a <span class=SpellE><tt><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>Lexer</span></tt></span>
+object supporting the 0-ary method <span class=SpellE><tt><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>readToken</span></tt></span><tt><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>()</span></tt>.
+The <span class=SpellE><span class=GramE><tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>readToken</span></tt></span></span><span
+class=GramE><tt><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;
+font-family:Consolas'>(</span></tt></span><tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>)</span></tt> method
+produces a stream of <span style='font-family:Consolas'>Token</span> objects
+belonging to various subclasses of the <tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>Token</span></tt>
+interface. The <span class=SpellE><tt><span style='mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:Consolas'>Lexer</span></tt></span> class
+supports two constructors: (<span class=SpellE>i</span>) a zero-<span
+class=SpellE>ary</span> constructor that converts standard input to a <span
+class=SpellE><tt><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt;font-family:Consolas'>Lexer</span></tt></span> and (ii) a unary
+constructor <span class=SpellE><span class=GramE><tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>Lexer</span></tt></span></span><span
+class=GramE><tt><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;
+font-family:Consolas'>(</span></tt></span><tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>String <span
+class=SpellE>fileName</span>)</span></tt> that converts the specified file to a
+<span class=SpellE><tt><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt;font-family:Consolas'>Lexer</span></tt></span>. The file <tt><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>lexer.java</span></tt><span
+style='font-family:Consolas'> </span>contains the definition of the <span
+class=SpellE><tt><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt;font-family:Consolas'>Lexer</span></tt></span> class and the collection
+of classes representing tokens (the Java interface type <tt><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>Token</span></tt>)
+and abstract syntax trees (the java interface type <tt><span style='mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:Consolas'>AST</span></tt>).</p>
+
+<h2><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>The
+API That Your Program Must Support<o:p></o:p></span></h2>
+
+<p>All classes must be in the default (top-level) package. Using named packages
+will break our compilation and grading scripts, causing a catastrophic loss of
+points on the assignment. </p>
+
+<p>Your parser should be expressed as a class <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Parser</span></b></tt>
+with constructors <span class=GramE><tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Parser(</span></b></tt></span><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Reader stream)</span></b></tt> and <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Parser(String filename)</span></b></tt> which create
+parsers reading the specified stream or file. The <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Reader</span></b></tt>
+form of these constructors is very convenient when you are testing your parser
+from the <span class=SpellE>DrJava</span> read-<span class=SpellE>eval</span>-print
+loop or from unit test methods.</p>
+
+<p>The <tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>Parser</span></b></tt> class should contain a
+public method <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>AST <span class=GramE>parse(</span>)</span></b></tt>
+that returns the abstract syntax tree for the Jam expression in the input
+stream. Our grading program will print the output using the method <span
+class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>System.out.println</span></b></tt></span>, which
+invokes the <span class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>toString</span></b></tt></span>
+method on its argument. All of the requisite abstract syntax classes including <span
+class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>toString</span></b></tt></span> methods are
+defined in the file <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>lexer.java</span></b></tt>.
+This library files are available on the web in the <span class=GramE>folder </span><a
+href="../../Assignments/1/java">../../Assignments/1/java</a>.</p>
+
+<p>If your parser encounters an erroneous input (including illegal tokens),
+simply print an explanation of the syntax error and abort parsing the file by
+throwing a <span class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>ParseException</span></b></tt></span>.
+Recovering from a syntax error to continue parsing is a complex problem with many
+special cases. It is not a realistic goal for this assignment. <a name=jam></a></p>
+
+<h2><span style='mso-bookmark:jam'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Input Language Specification<o:p></o:p></span></span></h2>
+
+<span style='mso-bookmark:jam'></span>
+
+<p>The following paragraphs define the parser's input language and the subset
+that your parser should recognize as legal Jam programs.</p>
+
+<p><strong><span style='font-family:"Arial",sans-serif'>The Meta-Language</span></strong>
+The parser's input language is described using Extended Backus-Naur Form
+(EBNF). When reading the notation, keep the following in mind:</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A symbol in
+     the meta-language always starts with a capital letter. Therefore, </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>Symbol</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is a symbol in the-meta
+     language, whereas </span><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>literal</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     is the actual text &quot;literal&quot;. Note that this convention depends
+     on the fact that no literals in Jam begin with a capital letter.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A phrase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> enclosed in
+     braces </span><span class=GramE><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>{ <i>P</i></span></b></tt></span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> }</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is optional, <i>i.e.</i> both </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> and the
+     empty string match </span><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>{ <i>P</i> }</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A phrase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> followed by
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>*</span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> is iterated
+     zero or more times, <i>e.g.</i> </span><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def*</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     means the concatenation of zero or more </span><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     phrases<span class=GramE>:</span><br>
+     <br>
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>Def</span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     </span><span class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def</span></b></tt></span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> <span class=SpellE>Def</span></span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>... </span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     and so on, including the empty string. <o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A phrase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> followed by
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>+</span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> is iterated
+     one or more times, <i>e.g.</i> </span><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def+</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     means the concatenation of one or more </span><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     phrases<span class=GramE>:</span><br>
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>Def</span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     </span><span class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Def</span></b></tt></span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> <span class=SpellE>Def</span></span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>... </span></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     and so on, but <strong><span style='font-family:"Arial",sans-serif'>not</span></strong>
+     the empty string.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>If a phrase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> enclosed in
+     brackets </span><span class=GramE><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>{ <i>P</i></span></b></tt></span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> }</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is followed by a </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>*</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> or </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>+</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'>, the braces are simply denote
+     grouping: the enclosed phrase is iterated as specified by the * or +
+     symbol. For example, </span><span class=GramE><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>{ A</span></b></tt></span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> B }*</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is matched by zero or more
+     concatenations of A B: </span><tt><b style='mso-bidi-font-weight:normal'><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>A B</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     </span><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>A B A B</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><br>
+     and so on, as well as the empty string, but <strong><span
+     style='font-family:"Arial",sans-serif'>not</span></strong> </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>A</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> or </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>A B A</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'>.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo2;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>If something
+     that is interpreted as part of the <span class=GramE>meta</span> language
+     should be interpreted literally as part of the language we are describing,
+     it will be enclosed in <i>single</i> quotes. Therefore, </span><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'>'A'</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is the actual letter
+     &quot;A&quot;, not the symbol </span><tt><b style='mso-bidi-font-weight:
+     normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>A</span></b></tt><span
+     style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     in the meta language, and </span><tt><b style='mso-bidi-font-weight:normal'><i><span
+     style='mso-ansi-font-size:12.0pt;font-family:Consolas'>P</span></i></b></tt><tt><b
+     style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+     font-family:Consolas'> '*'</span></b></tt><span style='font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'> is the phrase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> followed by
+     an actual asterisk, and does not mean that the phase </span><tt><b
+     style='mso-bidi-font-weight:normal'><i><span style='mso-ansi-font-size:
+     12.0pt;font-family:Consolas'>P</span></i></b></tt><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> should be
+     repeated zero or more times, as described above.<o:p></o:p></span></li>
+</ul>
+
+<p><b>The Input Language</b> &nbsp; The parser's input language (modulo a few
+changes described in the section (<b style='mso-bidi-font-weight:normal'><span
+style='mso-fareast-font-family:"Times New Roman"'>Left-associative Binary
+Operators</span></b>) is <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Input</span></b></tt>
+where: </p>
+
+<pre><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Input :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Token*<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Token :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= <span class=SpellE>AlphaOther</span> <span
+class=SpellE>AlphaOtherNumeric</span>* | Delimiter | Operator | <span
+class=SpellE>Int</span><o:p></o:p></span></b></pre>
+
+<p>The <span class=SpellE>lexer</span> recognizes keywords, delimiters
+(parentheses, commas, <span class=GramE>semicolons</span>), primitive
+operations, identifiers, and numbers.</p>
+
+<p>Adjacent tokens must be separated by whitespace (a non-empty sequence of
+spaces, tabs, and newlines) unless one of the tokens is a delimiter or
+operator. In identifying operators, the <span class=SpellE>lexer</span> chooses
+the longest possible match. Hence, <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>&lt;=</span></b></tt> is
+interpreted as a single token rather than <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>&lt;</span></b></tt>
+followed by <tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>=</span></b></tt>.</p>
+
+<pre><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Lower<span style='mso-spacerun:yes'>             </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= a | b | c | d | ... | z<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Upper<span style='mso-spacerun:yes'>             </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= 'A' | 'B' | 'C' | 'D' | ... | 'Z'<span style='mso-spacerun:yes'>      </span><o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Other<span style='mso-spacerun:yes'>             </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= ? | _<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Digit<span style='mso-spacerun:yes'>             </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Alpha<span style='mso-spacerun:yes'>             </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= Upper | Lower<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>AlphaOther</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>        </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= Alpha | Other<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>AlphaOtherNumeric</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'> :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= <span class=SpellE>AlphaOther</span> | Digit<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Delimiter<span style='mso-spacerun:yes'>         </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= ( | ) | [ | ] | , | ;<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Operator<span style='mso-spacerun:yes'>          </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= '+' | - | ~ | '*' | / | = | != | &lt; | &gt; | &lt;= | &gt;= | &amp; | '|' | :=<o:p></o:p></span></b></pre>
+
+<p><b>Note</b>: The terminal symbols 'A', <span class=GramE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>'B'</span></b></tt>, ...</span> are enclosed in single
+quotation marks because <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>A</span></b></tt>, <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>B</span></b></tt>, ..., would automatically be the names
+of non-terminal symbols in our notation system. For essentially the same
+reason, we enclose the symbols <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>'+'</span></b></tt>, <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>'*'</span></b></tt>, and <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>'|'</span></b></tt>
+in single quotation marks; these symbols without quotation marks are <span
+class=SpellE>metasymbols</span> in the notation scheme described above. </p>
+
+<p><b>Jam</b> &nbsp; The set of legitimate Jam phrases is the subset of the
+potential inputs consisting the expressions <span class=SpellE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Exp</span></b></tt></span><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'> </span></b></tt>defined
+by the following grammar: </p>
+
+<p><em><span style='font-family:"Arial",sans-serif'>Expressions</span></em></p>
+
+<pre><span class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Exp</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>         </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= Term { <span class=SpellE>Binop</span> <span
+class=SpellE>Exp</span> }<o:p></o:p></span></b></pre><pre><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+Consolas'><span style='mso-spacerun:yes'>              </span>| <span
+class=GramE>if</span> <span class=SpellE>Exp</span> then <span class=SpellE>Exp</span> else <span
+class=SpellE>Exp</span><o:p></o:p></span></b></pre><pre><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+Consolas'><span style='mso-spacerun:yes'>              </span>| let Def+ in <span
+class=SpellE>Exp</span><o:p></o:p></span></b></pre><pre><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+Consolas'><span style='mso-spacerun:yes'>              </span>| map <span
+class=SpellE>IdList</span> to <span class=SpellE>Exp</span><o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Term<span style='mso-spacerun:yes'>        </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= <span class=SpellE>Unop</span> Term<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>              </span>| Factor <span
+class=GramE>{ (</span> <span class=SpellE>ExpList</span> ) }<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>              </span>| Empty<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>              </span>| <span
+class=SpellE>Int</span><o:p></o:p></span></b></pre><pre><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+Consolas'><span style='mso-spacerun:yes'>              </span>| Bool<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Factor<span style='mso-spacerun:yes'>      </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= ( <span class=SpellE>Exp</span> ) | Prim | Id<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>ExpList</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>     </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= { <span class=SpellE>PropExpList</span> }<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>PropExpList</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'> :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= <span class=SpellE>Exp</span> { , <span
+class=SpellE>Exp</span> }*<o:p></o:p></span></b></pre><pre><span class=SpellE><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>IdList</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>      </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= { <span class=SpellE>PropIdList</span> }<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>PropIdList</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>  </span>:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Id { , Id}*<o:p></o:p></span></b></pre>
+
+<p><em><span style='font-family:"Arial",sans-serif'>Definitions</span></em></p>
+
+<pre><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Def :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Id := <span class=SpellE>Exp</span> ;<o:p></o:p></span></b></pre>
+
+<p><em><span style='font-family:"Arial",sans-serif'>Primitive Constants,
+Operators, and Operations</span></em> </p>
+
+<pre><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Empty :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= empty<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Bool<span style='mso-spacerun:yes'>  </span>:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= true | false<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Unop</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>  </span>:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Sign | ~<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Sign<span style='mso-spacerun:yes'>  </span>:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= '+' | -<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Binop</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'> :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Sign | '*' | / | = | != | &lt; | &gt; | &lt;= | &gt;= | &amp; | '|'<o:p></o:p></span></b></pre><pre><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'>Prim<span style='mso-spacerun:yes'>  </span>:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= number? | function? | <span class=GramE>list</span>? | <span
+class=GramE>empty</span>? | <span class=GramE>cons</span>? | <span class=GramE>cons</span> | first | rest | arity<o:p></o:p></span></b></pre>
+
+<p><em><span style='font-family:"Arial",sans-serif'>Identifiers</span></em></p>
+
+<pre><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Id :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= <span class=SpellE>AlphaOther</span> {<span
+class=SpellE>AlphaOther</span> | Digit}*<o:p></o:p></span></b></pre>
+
+<p>Please note that <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Id</span></b></tt> does <strong><span
+style='font-family:"Arial",sans-serif'>not</span></strong> contain the anything
+that matches <tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>Prim</span></b></tt> or the keywords <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>if</span></b></tt>, <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>then</span></b></tt>,
+<tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>else</span></b></tt>, <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>map</span></b></tt>,
+<tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>to</span></b></tt>, <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>let</span></b></tt>,
+<tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>in</span></b></tt>, <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>empty</span></b></tt>,
+<tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>true</span></b></tt>, and <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>false</span></b></tt>.</p>
+
+<p><em><span style='font-family:"Arial",sans-serif'>Numbers</span></em></p>
+
+<pre><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Int</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'> :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Digit+<o:p></o:p></span></b></pre>
+
+<p>The preceding grammar requires one symbol <span class=SpellE>lookahead</span>
+in a few situations. The Java <span class=SpellE>lexer</span> in our support
+code includes a method <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Token <span class=GramE>peek(</span>)</span></b></tt>
+that behaves exactly like the method <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Token <span
+class=SpellE>readToken</span>()</span></b></tt> except for the fact that it
+leaves the <span class=SpellE>the</span> scanned token at the front of the
+input stream (in contrast <span class=SpellE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>readToken</span></b></tt></span><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>()</span></b></tt> removes the scanned token from the
+input stream).</p>
+
+<p>The Java file <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>lexer.java</span></b></tt>
+defines all of the abstract syntax classes required to represent Jam programs
+using the composite design pattern. There is one constructor for each
+fundamentally different form of expression in the definition of Jam syntax
+given above. Some primitive (non-recursive) abstract syntax classes are the
+same the corresponding token classes. </p>
+
+<p>For example, suppose the Jam program under consideration is</p>
+
+<pre><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>f(</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>x) + (x * 12))<o:p></o:p></span></b></pre>
+
+<p>The abstract syntax representation for this program phrase is:</p>
+
+<pre><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>new</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'> <span class=SpellE>BinOpApp</span>(<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>       </span><span
+class=GramE>new</span> Op(&quot;+&quot;),<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>       </span><span
+class=GramE>new</span> App(new Variable(&quot;f&quot;), new AST[] { new Variable(&quot;x&quot;) }),<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>       </span><span
+class=GramE>new</span> <span class=SpellE>BinOpApp</span>(new Op(&quot;*&quot;), new Variable(&quot;x&quot;), new <span
+class=SpellE>IntConstant</span>(12))<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>     </span>)<o:p></o:p></span></b></pre>
+
+<p>This construction does not tell the whole story. The <span class=SpellE>lexer</span>
+is guaranteed to always return the <i>same</i> object for a given operator.
+Similarly, there is only copy of each variable encountered by the <span
+class=SpellE>lexer</span>. Hence, there is only one copy of the <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Operator</span></b></tt> &quot;+&quot;, one copy of the <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Operator</span></b></tt> &quot;*&quot;, one copy of the <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Variable</span></b></tt> &quot;x&quot;, <i>etc</i>. As a
+result, the <tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>==</span></b></tt> operator in Java can be used to
+compare operators and variables. Note that the <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>Operator</span></b></tt>s
+&quot;+&quot; and &quot;-&quot; can be used either as unary or binary
+operators. </p>
+
+<h3><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Left-associative
+Binary Operators<o:p></o:p></span></h3>
+
+<p>The preceding grammar for Jam has an annoying flaw. To make the language
+easy to parse using recursive descent (top-down) parsing, we used right
+recursion in the definition of arithmetic expressions (<span class=SpellE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Exp</span></b></tt></span>). (Left recursion forces
+infinite looping in top-down parsing.) But right recursion yields
+right-associative ASTs (where computation must be performed right to left),
+while the usual mathematical convention in arithmetic expressions is that
+binary operators are left-associative (where computation must be performed left
+to right). There is a widely-used trick in writing grammars for top-down
+parsing using syntax diagrams that avoids this problem. The trick is replace
+right recursion in a simple production (only one alternative on the right hand
+side) by iteration: an edge looping back to the input edge of the diagram. We
+used this trick in generating the syntax diagrams for <span class=SpellE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>ExpList</span></b></tt></span> and <span class=SpellE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>IdList</span></b></tt></span> for our original grammar.
+Given our original Jam grammar, we can convert the production </p>
+
+<pre><span class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Exp</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>         </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= Term { <span class=SpellE>Binop</span> <span
+class=SpellE>Exp</span> } | ...<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre>
+
+<p class=MsoNormal><span class=GramE><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>to</span></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+<o:p></o:p></span></p>
+
+<pre><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>Exp</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>         </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= <span class=SpellE>BinaryExp</span> | ...<o:p></o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>BinaryExp</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><span style='mso-spacerun:yes'>   </span>::</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>= Term { <span class=SpellE>Binop</span> <span
+class=SpellE>BinaryExp</span> }<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre>
+
+<p class=MsoNormal><span class=GramE><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>at</span></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+the cost of excluding chains of binary operations terminating in an expression
+other than a term. Then this revised grammar can be represented using syntax
+diagrams that define </span><span class=SpellE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>BinaryExp</span></b></tt></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+iteratively (just like </span><span class=SpellE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>PropExpList</span></b></tt></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+in the original grammar). <o:p></o:p></span></p>
+
+<p>The preceding definition of <span class=SpellE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>BinaryExp</span></b></tt></span>
+generates the same set of strings as the extended rule: </p>
+
+<pre><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre><pre><span
+class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Consolas'>BinaryExp</span></b></span></span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Consolas'> :</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'>:= Term { <span class=SpellE>BinOp</span> Term }*<o:p></o:p></span></b></pre><pre><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:Consolas'><o:p>&nbsp;</o:p></span></b></pre>
+
+<p class=MsoNormal><span class=GramE><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>which</span></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+is ambiguous about left or right associativity. When iteration is used to
+recognize a </span><span class=SpellE><tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>BinaryExp</span></b></tt></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>,
+the parsing process will construct a left-associative tree since the tree is
+constructed left-to-right (each new </span><span class=SpellE><tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>Binop</span></b></tt></span><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> adds a new root
+to the AST). <span style='mso-spacerun:yes'> </span>This convention make the
+syntax diagram formulation of our Jam grammar deterministic and unambiguous.<o:p></o:p></span></p>
+
+<p>The file <a href="SyntaxDiagrams.pdf"><span class=SpellE>SyntaxDiagrams</span></a>
+contains iterative syntax diagrams corresponding to the original left
+associative version of the Jam language, which precisely describes the syntax
+of Jam and how we want the parser to behave. Of course, this language
+eliminates a few quirky inputs from the language based on our original <span
+class=SpellE>grammmar</span>. Your parser should treat these quirky inputs as
+erroneous. </p>
+
+<p>It is possible to write syntax diagrams that treat binary expressions
+iteratively and still allow arbitrary expressions at the end of the binary
+expression. But the corresponding grammar and syntax diagrams are much more
+complex. So we have not followed this design choice in creating the revised
+syntax for Jam. In fact, we view our Jam grammar as a case study showing that pure
+context-free grammars are not quite the right formalism for expressing easily
+parsed program syntax. Syntax diagrams where iteration is always
+left-associative (equivalent to extended context-free-grammars where iteration
+always expands into left-associative parse trees) are much better. I am not
+aware of a rigorous exposition of such extended BNF grammars in the literature;
+I suspect that most theoretical computer scientists would not find such an
+exposition very interesting even though the standard notion of parsing language
+specified by a context-free grammar is an imperfect formalization of practical
+parsing. </p>
+
+<p>Write your parser to produce left-associative ASTs for arithmetic
+expressions. If your parser implements either of the &quot;revised&quot; syntax
+diagram definitions given above (which are equivalent) using <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>while</span></b></tt> loops for iteration and constructs
+the corresponding abstract syntax trees in a functional style (no mutation of
+trees in <span class=SpellE>theconstruction</span> process), your parser will
+naturally build syntax trees that are left-associative.</p>
+
+<h2><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Testing
+and Submitting Your Program<o:p></o:p></span></h2>
+
+<p>The <span class=SpellE><span style='font-family:Consolas'>src</span></span> folder
+in the provided code base includes some Junit4 test classes which are not
+comprehensive.<span style='mso-spacerun:yes'>  </span>You need to add more test
+cases; you need to check every production in the grammar.<span
+style='mso-spacerun:yes'>  </span>If a production involves iteration or recursion,
+you need to test the base cases as well as simple inductive constructions.</p>
+
+<p><span class=SpellE>Editr</span> the <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>README</span></b></tt>
+file for your repository so that it</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>outlines the
+     organization of your program, <o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>specifies
+     any compatible additions that you made the provided API (not generally
+     necessary), and<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'><span class=SpellE><span
+     class=GramE><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>specifes</span></span></span><span style='font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'> what
+     testing process you used to confirm the correctness of your program.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Note
+that the README file is a GitHub “<span class=SpellE>MarkDown</span>” file,
+text augmented by a few simple formatting annotations.<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>MarkDown</span> (MD) is
+much less powerful than HTML but much easier to use.<span
+style='mso-spacerun:yes'>  </span>The webpage <b style='mso-bidi-font-weight:
+normal'><a
+href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown-cheat-sheet</a></b>
+is a good summary for learning <span class=SpellE>MarkDown</span> and a useful
+reference.<o:p></o:p></span></p>
+
+<p>We do not recommend using separate test data files because it creates more
+opportunities for incidental errors when testing your solution. <span
+style='mso-spacerun:yes'> </span>Unless you are testing how well your program
+scales to large inputs, they are generally unnecessary.<span
+style='mso-spacerun:yes'>  </span>All JUnit test classes submitted for grading
+should be compatible with a generic solution that conforms to the public interface
+provided by the stub files in the provided support code. In other words, we
+should be able to compile and run your unit tests against a reference solution
+used for grading, which has the same public interface as the support code. Your
+test classes should be defined in files matching the pattern <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>&quot;*Assign#Test.java&quot;</span></b></tt>, where <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>&quot;#&quot;</span></b></tt> is the current assignment
+number. For example, <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>&quot;MyAssign2Test.java&quot;</span></b></tt>
+would be a valid name for Assignment 2 unit tests. If you want to include other
+tests that you do not want graded (e.g., to test your private interfaces), then
+simply use a different suffix than &quot;Test&quot; for the test class names
+(e.g., <tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>&quot;Assign1Test#.java&quot;</span></b></tt>). If
+you have additional utility classes that are required dependences of your unit
+test classes, please name those classes using the pattern <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>&quot;*Assign#TestSupport.java&quot;</span></b></tt>,
+which signals that the class is required to support your unit tests, but is not
+a unit test class that should be independently launched. You may also include
+test support files with names matching the pattern <tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>&quot;*AssignAllTestSupport.java&quot;</span></b></tt>,
+which can contain common test support code that can be reused across multiple
+assignment submissions without needing to rename the file. <span
+style='mso-spacerun:yes'> </span>Note that our class solutions to the
+assignments do not rely on such utility classes.</p>
+
+<p>Each procedure or method in your program should include a short comment
+stating precisely what it does. For routines that parse a particular form of
+program phrase, the comment should provide the grammar rules describing that
+form.</p>
+
+<p>You obviously do not need to “submit” your program, since you are creating
+it inside a repository on the ownership of the course staff.<span
+style='mso-spacerun:yes'>  </span>We can easily access all student
+repositories.<o:p></o:p></p>
+
+<!-- ONLY WORKS IN BASH
+  <p>Note if <tt>turnin411</tt> is not on your path, you will need to add <tt>~comp411/bin</tt> to your path:</p>
+  <pre>export PATH=$PATH:~comp411/bin</pre>
+  -->
+
+<h2><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Implementation
+Hints<o:p></o:p></span></h2>
+
+<p>The <span class=SpellE><span class=GramE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>toString</span></b></tt></span></span><span
+class=GramE><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>(</span></b></tt></span><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>)</span></b></tt>
+methods for each <tt><b style='mso-bidi-font-weight:normal'><span
+style='mso-ansi-font-size:12.0pt;font-family:Consolas'>AST</span></b></tt>
+class effectively provide an <span class=SpellE>unparser</span> for <tt><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:12.0pt;
+font-family:Consolas'>AST</span></b></tt>s. You can directly compare test input
+strings with output <b style='mso-bidi-font-weight:normal'><span
+style='font-family:Consolas'>AST</span></b>s by <span class=SpellE>unparsing</span>
+the <b style='mso-bidi-font-weight:normal'><span style='font-family:Consolas'>AST</span></b>s
+(using <span class=SpellE><span class=GramE><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>toString</span></b></tt></span></span><span
+class=GramE><tt><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:
+12.0pt;font-family:Consolas'>(</span></b></tt></span><tt><b style='mso-bidi-font-weight:
+normal'><span style='mso-ansi-font-size:12.0pt;font-family:Consolas'>)</span></b></tt>).
+The two strings should match up to differences in whitespace, new lines, and
+parentheses using for grouping which may force you to slightly reformat your
+input strings.</p>
+
+</div>
+
+</body>
+
+</html>
