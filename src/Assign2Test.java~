@@ -152,31 +152,17 @@ public class Assign2Test extends TestCase {
     }
   } //end of func
   
-  
-  public void testValueYfactorial() {
-    try {
-      String output = "720";
-      String input = "let  Y := map f to let g := map x to f(map z to (x(x))(z)); in g(g);" +
-        "  FACT := map f to map n to if n = 0 then 1 else n * f(n - 1);" +
-        "in (Y(FACT))(6)";
-      valueCheck("ValueYFactorial", output, input );
-      
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail("valueYFactorial threw " + e);
-    }
-  } //end of func
-  
+
   public void testNameYFactorial() {
     try {
       String output = "720";
       String input = "let   Y := map f to let g := map x to f(x(x)); in g(g);" +
-        "   FACT := map f to map n to if n = 0 then 1 else n * f(n - 1); in (Y(FACT))(6)";
-      nameCheck("nameYFactorial", output, input );
-      
+                     "   FACT := map f to map n to if n = 0 then 1 else n * f(n - 1); in (Y(FACT))(6)";
+      nameCheck("[1.50] nameYFactorial", output, input );
+
     } catch (Exception e) {
       e.printStackTrace();
-      fail("nameYFactorial threw " + e);
+      fail("[1.50] nameYFactorial threw " + e);
     }
   } //end of func
   
@@ -186,11 +172,11 @@ public class Assign2Test extends TestCase {
       String output = "720";
       String input = "let   Y := map f to let g := map x to f(x(x)); in g(g); " +
                      "   FACT := map f to map n to if n = 0 then 1 else n * f(n - 1); in (Y(FACT))(6)";
-      needCheck("needYFactorial", output, input );
+      needCheck("[1.50] needYFactorial", output, input );
 
     } catch (Exception e) {
       e.printStackTrace();
-      fail("needYFactorial threw " + e);
+      fail("[1.50] needYFactorial threw " + e);
     }
   } //end of func
 }

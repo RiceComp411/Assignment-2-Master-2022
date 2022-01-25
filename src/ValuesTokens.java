@@ -219,7 +219,8 @@ abstract class PrimFun extends JamFun implements Token, Term {
 //  public <ResType> ResType accept(JamValVisitor<ResType> jvv) { return jvv.forJamVoid(this); }
 //}
 
-/** A visitor for the singleton PrimFun classes. */
+/** A visitor for the singleton PrimFun classes. The method parameters have been elided because the host object is 
+  * simply an instance of the PrimFun specified in the forXXXX method name. */
 interface PrimFunVisitor<ResType> {
   ResType forFunctionPPrim();
   ResType forNumberPPrim();
