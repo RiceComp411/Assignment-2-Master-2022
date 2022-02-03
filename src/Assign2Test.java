@@ -153,7 +153,7 @@ public class Assign2Test extends TestCase {
   } //end of func
   
   
-  public void testValueYfactorial() {
+  public void testValueYFactorial() {
     try {
       String output = "720";
       String input = "let  Y := map f to let g := map x to f(map z to (x(x))(z)); in g(g);" +

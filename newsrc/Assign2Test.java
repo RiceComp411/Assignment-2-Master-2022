@@ -153,17 +153,17 @@ public class Assign2Test extends TestCase {
   } //end of func
   
   
-  public void testValueYfactorial() {
+  public void testValueYFactorial() {
     try {
       String output = "720";
       String input = "let  Y := map f to let g := map x to f(map z to (x(x))(z)); in g(g);" +
         "  FACT := map f to map n to if n = 0 then 1 else n * f(n - 1);" +
         "in (Y(FACT))(6)";
-      valueCheck("[3.00] yfactorial", output, input );
+      valueCheck("[3.00] valueYFactorial", output, input );
       
     } catch (Exception e) {
       e.printStackTrace();
-      fail("[3.00] yfactorial threw " + e);
+      fail("[3.00] valueYFactorial threw " + e);
     }
   } //end of func
   
