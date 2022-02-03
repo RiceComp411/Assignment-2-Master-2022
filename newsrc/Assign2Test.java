@@ -152,14 +152,28 @@ public class Assign2Test extends TestCase {
     }
   } //end of func
   
-
+  
+  public void testValueYfactorial() {
+    try {
+      String output = "720";
+      String input = "let  Y := map f to let g := map x to f(map z to (x(x))(z)); in g(g);" +
+        "  FACT := map f to map n to if n = 0 then 1 else n * f(n - 1);" +
+        "in (Y(FACT))(6)";
+      valueCheck("[3.00] yfactorial", output, input );
+      
+    } catch (Exception e) {
+      e.printStackTrace();
+      fail("[3.00] yfactorial threw " + e);
+    }
+  } //end of func
+  
   public void testNameYFactorial() {
     try {
       String output = "720";
       String input = "let   Y := map f to let g := map x to f(x(x)); in g(g);" +
-                     "   FACT := map f to map n to if n = 0 then 1 else n * f(n - 1); in (Y(FACT))(6)";
+        "   FACT := map f to map n to if n = 0 then 1 else n * f(n - 1); in (Y(FACT))(6)";
       nameCheck("[1.50] nameYFactorial", output, input );
-
+      
     } catch (Exception e) {
       e.printStackTrace();
       fail("[1.50] nameYFactorial threw " + e);

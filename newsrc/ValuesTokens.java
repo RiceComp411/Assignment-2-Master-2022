@@ -159,7 +159,7 @@ class JamCons extends Cons<JamVal> implements JamList {
   public JamList rest() { return (JamList) super.rest(); }
 }
 
-/** The basic Jam Binding class. Can be extended to support lazy (CBN) bindings. */
+/** The basic Jam Binding class. Can be extended to support lazy (CBNm, CBNd) bindings. */
 abstract class Binding {
   Variable var;
   JamVal value;
