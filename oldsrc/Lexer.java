@@ -201,11 +201,11 @@ class Lexer extends StreamTokenizer {
         
       case '!': 
         tokenType = getToken();
-        if (tokenType == '=') return NOT_EQUALS;
-        pushBack();		
-        throw new ParseException("'!' is not a legal token"); 
+        if (tokenType == '=') return NOT_EQUALS;  
+        else throw new ParseException("!" + ((char) tokenType) + " is not a legal token"); 
         
-        /* this alternative to the preceding code line supports reference cells */
+        /* this alternate else clause supports reference cells */
+//        pushBack();
 //        return BANG;  
      
       case '&': return AND;  
@@ -217,7 +217,8 @@ class Lexer extends StreamTokenizer {
         throw new ParseException("':' is not a legal token");
       }
       default:  
-        throw new ParseException("'" + ((char) tokenType) + "' is not a legal token");
+        throw new 
+        ParseException("'" + ((char) tokenType) + "' is not a legal token");
     }
   }
     
